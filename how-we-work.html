@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SEEK Asia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An extension of SEEK, SEEK Asia combines the two giants in job portal brands, jobsDB and JobStreet, under one roof and helps improve the lives of millions across Asia through comprehensive platforms.">
+  <meta name="keywords" content="seek asia, jobstreet, jobsdb, seek group, careers at seek asia, careers at jobstreet, careers at jobsdb">
+  
+
+  
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <noscript id="deferred-styles">
+     <link rel="stylesheet" type="text/css" href="css/seekasia.css"/>
+  </noscript>
+  <style>
+     html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}header,section{display:block}a{background-color:transparent}strong{font-weight:700}h1{font-size:2em;margin:.67em 0}img{border:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}a{color:#337ab7;text-decoration:none}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}h1,h2,h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h2,h3{margin-top:20px;margin-bottom:10px}h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}.text-center{text-align:center}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-left:-15px;margin-right:-15px}.col-md-8{position:relative;min-height:1px;padding-left:15px;padding-right:15px}@media (min-width:992px){.col-md-8{float:left}.col-md-8{width:66.66666667%}.col-md-offset-2{margin-left:16.66666667%}}.container:before,.container:after,.row:before,.row:after{content:" ";display:table}.container:after,.row:after{clear:both}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}}@media (min-width:768px) and (max-width:991px){.visible-sm{display:block!important}}@media (min-width:992px) and (max-width:1199px){.visible-md{display:block!important}}@media (min-width:1200px){.visible-lg{display:block!important}}body{font-size:24px}.header-border{background:#0d3880;height:10px}.img-center{display:inline}a{color:#e60a7c;text-decoration:underline}@media (max-width:991px){header h1{font-size:36px;line-height:42px}}header .header-sub-title h3{line-height:32px;margin-bottom:20px}@media (max-width:991px){header .header-sub-title h3{font-size:21px;line-height:28px}}header img.img-center{margin:10px 0 20px;max-width:300px}@media (max-width:991px){header img.img-center{max-width:240px;margin:10px 0 10px}}@media (max-width:767px){header img.img-center{max-width:200px}}.section{padding:50px 0}.section h3{line-height:32px}@media (max-width:991px){.section h3{font-size:18px;line-height:24px}}.section-map{position:relative;height:100%;width:100%;color:white;background-color:#0d3880}.section-map .section-heading{position:absolute;top:30px;left:50%;margin-left:-90px;font-size:36px}@media (max-width:991px){.section-map .section-heading{margin-left:-75px;font-size:28px}}.section-map .about-text{position:absolute;top:30%;right:16%;width:370px;height:224px;font-size:24px;line-height:32px}@media (max-width:991px){.section-map .about-text{position:absolute;top:30%;right:10%;width:324px;height:120px;font-size:18px;line-height:24px}}@media (max-width:767px){.section-map .about-text{position:relative;top:0;left:0;width:100%;height:auto;text-align:center;padding:30px}}.section-map img{width:100%}
+  </style>
+
+<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+
+<style amp-custom>
+
+  /* Wrapper that hosts the video and the overlay */
+  .video-player {
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Overlay fills the parent and sits on top of the video */
+  .click-to-play-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .poster-image {
+    position: absolute;
+    z-index: 1;
+  }
+
+  .poster-image img {
+    object-fit: cover;
+  }
+
+  .video-title {
+    position: absolute;
+    z-index: 2;
+
+    /* Align to the top left */
+    top: 0;
+    left: 0;
+
+    font-size: 1.3em;
+    background-color: rgba(0,0,0,0.8);
+    color: #fafafa;
+    padding: 0.5rem;
+    margin: 0px;
+  }
+
+  .play-icon {
+    position: absolute;
+    z-index: 2;
+
+    width: 100px;
+    height: 100px;
+
+    background-image: url("img/play-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* Align to the middle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .play-icon:hover, .play-icon:focus {
+    opacity: 1;
+  }
+</style>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section class="nav">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row pt-4 pb-4">
+            <div class="col-lg-12">
+              <a href="index.html"><img src="img/SEEK logo.png" height="auto" width="112px" alt="" srcset=""></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="topBanner">
+      <div class="container-fluid tobBannerbg">
+        <div class="container">
+          <div class="row topBannerContent">
+            <div class="topBannerInnerContent">
+              <h5>HOW WE WORK</h5>
+
+              <h1>Working together to make things better</h1>
+  
+              <p>At SEEK we’ve created a community of valued, talented, diverse individuals who really know their stuff. </p>
+
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="navtab">
+      <div class="container-fluid">
+        <div class="row navtabContent">
+          <div class="col-lg-12">
+              <div class="list-x">
+                <div class="item item1"><a href="work-for-seek.html">Work for SEEK</a></div>
+                <div class="item item2"><a href="why-choose-seek.html">Why choose SEEK?</a></div>
+                <div class="item item3 active"><a href="how-we-work.html">How we work</a></div>
+                <div class="item item4"><a href="how-we-hire.html">How we hire</a></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="row rowContentFormat">
+          <div class="col-lg-12 colFormat">
+            <div class="contentSize">
+              <p class="bigTitle">Our SEEK</p>
+              <p class="smallTitles">Our SEEK is a statement that describes our culture, and what we know to be true for success at SEEK. By using Our SEEK in our everyday work, together we can deliver on our Purpose, create great value for our customers, and make SEEK an even better place to work. </p>
+            </div>
+          </div>
+        </div>
+
+       <div class="wrapper">
+        <div class="wrapperContent">
+          <div class="imageFormat">
+            <img src="img/iconPassion.png" alt="" srcset="">
+          </div>
+          <div class="iconDescription">
+            <h4>Passion </h4>
+            <p>We are passionate about our purpose, our customers and the community.</p>
+          </div>
+        </div>
+        <div class="wrapperContent">
+          <div class="imageFormat">
+            <img src="img/iconTeam.png" alt="" srcset="">
+          </div>
+          <div class="iconDescription">
+            <h4>Team</h4>
+            <p>We care about each other and collaborate to achieve together. </p>
+          </div>
+        </div>
+        <div class="wrapperContent">
+          <div class="imageFormat">
+            <img src="img/iconDelivery.png" alt="" srcset="">
+          </div>
+          <div class="iconDescription">
+            <h4>Delivery</h4>
+              <p>We execute with excellence and achieve great results.</p>
+          </div>
+        </div>
+        <div class="wrapperContent">
+          <div class="imageFormat">
+            <img src="img/iconFuture.png" alt="" srcset="">
+          </div>
+          <div class="iconDescription">
+            <h4>Future  </h4>
+            <p>We think and act for the long-term.</p>
+          </div>
+        </div>
+       </div>
+
+        <div class="row rowContentFormat">
+          <div class="col-sm-6 col-md-6 order-sm-1">
+            <img src="img/big-ambitions.jpg" class="w-100 d-block imgRightFormat" alt="" srcset="">
+          </div>
+          <div class="col-sm-6 col-md-6 order-sm-12 colDescriptionFormat">
+            <h2>We’ve got big ambitions  </h2>
+            <p>SEEK is set for growth, with an ambition to double our revenue in the next five years. From a digital start-up 25 years ago, we are always finding new ways to deliver on our purpose to help people live more fulfilling lives and help organisations succeed thanks to the passion and creativity of our people.</p>
+            <p>As we continue to grow across Asia Pacific, we are investing in scalable, reliable, and safe platforms to keep candidates and hirers connected to our sites and apps, so they can make their next career move or hire the best people.</p>
+          </div>
+        </div>
+
+        <div class="row rowContentFormat">
+          <div class="col-sm-6 col-md-6 col-lg-6 videoPlayerContent">
+            <div class="video-player">
+
+              <amp-video id="myVideo" controls width="1280" height="720" layout="responsive" src="video/Engineering-at-SEEK-in-Asia-featuring-Shen-Tham-CTO-of-Asia-SEEK.mp4">
+              </amp-video>
+            
+              <div id="myOverlay" class="click-to-play-overlay">
+            
+                <!-- <h3 class="video-title">Title of the video</h3> -->
+            
+                <div class="play-icon" role="button" tabindex="0" on="tap:myOverlay.hide, myVideo.play"></div>
+            
+                <amp-img class="poster-image" layout="fill" src="img/engineering-the-way-forward.jpg"></amp-img>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 colDescriptionFormat">
+            <h2>Engineering the way forward</h2>
+            <p>We believe that cross-functional collaboration is the sweet spot between design and engineering. Our Product and Technology teams are at the heart of designing, building, adapting, and maintaining the platforms and products that provide our customers with a beautiful and effortless SEEK experience, every day.  </p>
+            <p>All of our teams are autonomous and agile, and our established tech stack and code base means you can focus on innovating and trying new things.</p>
+          </div>
+        </div>
+
+
+        <div class="row rowContentFormat">
+          <div class="col-lg-12 colFormat videoPlayerContent">
+            <div class="contentSize">
+              <p class="bigTitle">Proud to be SEEK</p>
+              <p class="smallTitles">SEEKers are curious, passionate, and proud. Watch and hear some of our SEEKers say it best.  </p>
+              <div class="video-player">
+
+                <amp-video id="myVideo2" controls width="1280" height="720" layout="responsive" src="video/Proud-to-be-SEEK-Product-at-SEEK.mp4">
+                </amp-video>
+              
+                <div id="myOverlay2" class="click-to-play-overlay">
+              
+                  <!-- <h3 class="video-title">Title of the video</h3> -->
+              
+                  <div class="play-icon" role="button" tabindex="0" on="tap:myOverlay2.hide, myVideo2.play"></div>
+              
+                  <amp-img class="poster-image" layout="fill" src="img/proud-to-be-seek.jpg"></amp-img>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     
+        <div class="row rowContentFormat">
+          <div class="col-lg-12 colFormat">
+            <div class="contentSize">
+              <p class="bigTitle">Connecting with our community</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row rowContentFormat">
+          <div class="col-sm-6 col-md-6 order-sm-1">
+            <div class="video-player">
+
+              <amp-video id="myVideo3" controls width="1280" height="720" layout="responsive" src="video/SEEK-Hackathon-Highlights.mp4">
+              </amp-video>
+            
+              <div id="myOverlay3" class="click-to-play-overlay">
+            
+                <!-- <h3 class="video-title">Title of the video</h3> -->
+            
+                <div class="play-icon" role="button" tabindex="0" on="tap:myOverlay3.hide, myVideo3.play"></div>
+            
+                <amp-img class="poster-image" layout="fill" src="img/Hackathon.jpg"></amp-img>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 order-sm-12 colDescriptionFormat">
+            <h2>Hackathons are part of our DNA</h2>
+            <p>During our twice-yearly Hackathon, SEEKers from across the business work together to create innovative products, concepts, prototypes, or a business case that helps SEEK to deliver to our purpose. It doesn't necessarily have to be something new and shiny; it could also be a brilliant fix for an existing back-office problem or process.</p>
+    
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bottomImageContent">
+        <div>
+          <div>
+            <div class="bottomImage">
+            </div>
+          </div>
+          <div>
+            <div class="borderFormat">
+
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      </section>
+      
+  
+      <section class="footerArea">
+        <div class="container footerContainer">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><h3>Our brands in Asia</h3></li>
+                <li><a href="https://www.jobstreet.com/" class="socialLinkFormat">
+                  <div>
+                    <img src="img/JobStreet.png" width="120px" height="auto" alt="" srcset="">
+                  </div>
+                </a>
+                </li>
+                <li><a href="https://www.jobsdb.com/" class="socialLinkFormat">
+                  <div>
+                    <img src="img/JobsDB.png" width="120px" height="auto" alt="" srcset="">
+                  </div>
+               </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><h3>Work for SEEK</h3></li>
+                <li><a href="why-choose-seek.html">Why choose SEEK?</a></li>
+                <li><a href="how-we-work.html">How we work</a></li>
+                <li><a href="how-we-hire.html">How we hire</a></li>
+                <li><a href="https://www.jobstreet.com.my/en/job-search/jobs-at-seek-asia/">Vacancies in Asia</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <ul>
+                <li><h3>Contact us</h3></li>
+                <li><a href="https://www.seek.com.au/contact-us/">SEEK</a></li>
+                <li><a href="https://www.jobstreet.com/about-us/contact-us-malaysia/">JobStreet</a></li>
+                <li><a href="https://hk.jobsdb.com/en-hk/pages/regional-coverage/">JobsDB</a></li>
+              </ul>
+            </div>
+      
+     
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-12 pt-5">
+              All rights reserved.
+            </div>
+          </div>
+        </div>
+    
+    
+      </section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+      
+</body>
+</html>
